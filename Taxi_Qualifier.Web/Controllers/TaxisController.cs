@@ -32,8 +32,10 @@ namespace Taxi_Qualifier.Web.Controllers
                 return NotFound();
             }
 
-            TaxiEntity taxiEntity = await _context.Taxis
-                .FirstOrDefaultAsync(m => m.Id == id);
+            //El FindAsync es para traer solo un registro de la tabla
+            //El FirstOrDefaultAsync es para traer latabla con sus relaciones
+            TaxiEntity taxiEntity = await _context.Taxis.FindAsync(id);
+                //.FirstOrDefaultAsync(m => m.Id == id);
             return taxiEntity == null ? NotFound() : (IActionResult)View(taxiEntity);
         }
 
@@ -77,7 +79,7 @@ namespace Taxi_Qualifier.Web.Controllers
         // more details see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Edit(int id, [Bind("Id,Plaque")] TaxiEntity taxiEntity)
+        public async Task<IActionResult> Edit(int id, TaxiEntity taxiEntity)
         {
             if (id != taxiEntity.Id)
             {
@@ -86,22 +88,9 @@ namespace Taxi_Qualifier.Web.Controllers
 
             if (ModelState.IsValid)
             {
-                try
-                {
-                    _ = _context.Update(taxiEntity);
-                    _ = await _context.SaveChangesAsync();
-                }
-                catch (DbUpdateConcurrencyException)
-                {
-                    if (!TaxiEntityExists(taxiEntity.Id))
-                    {
-                        return NotFound();
-                    }
-                    else
-                    {
-                        throw;
-                    }
-                }
+                taxiEntity.Plaque = taxiEntity.Plaque.ToUpper();
+                _ = _context.Update(taxiEntity);
+                _ = await _context.SaveChangesAsync();
                 return RedirectToAction(nameof(Index));
             }
             return View(taxiEntity);
@@ -115,25 +104,14 @@ namespace Taxi_Qualifier.Web.Controllers
                 return NotFound();
             }
 
-            TaxiEntity taxiEntity = await _context.Taxis
-                .FirstOrDefaultAsync(m => m.Id == id);
-            return taxiEntity == null ? NotFound() : (IActionResult)View(taxiEntity);
-        }
-
-        // POST: Taxis/Delete/5
-        [HttpPost, ActionName("Delete")]
-        [ValidateAntiForgeryToken]
-        public async Task<IActionResult> DeleteConfirmed(int id)
-        {
             TaxiEntity taxiEntity = await _context.Taxis.FindAsync(id);
+            if (taxiEntity == null)
+            {
+                return NotFound();
+            }
             _ = _context.Taxis.Remove(taxiEntity);
             _ = await _context.SaveChangesAsync();
             return RedirectToAction(nameof(Index));
-        }
-
-        private bool TaxiEntityExists(int id)
-        {
-            return _context.Taxis.Any(e => e.Id == id);
         }
     }
 }
