@@ -2,6 +2,8 @@
 
 using Microsoft.EntityFrameworkCore;
 
+using Taxi.Web.Data.Entities;
+
 using Taxi_Qualifier.Web.Data.Entities;
 
 namespace Taxi_Qualifier.Web.Data
@@ -13,5 +15,9 @@ namespace Taxi_Qualifier.Web.Data
         }
 
         public DbSet<TaxiEntity> Taxis { get; set; }
+
+        public DbSet<TripEntity> Trips { get; set; }
+
+        public DbSet<TripDetailEntity> TripDetails { get; set; }
     }
 }
