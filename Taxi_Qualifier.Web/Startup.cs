@@ -79,7 +79,7 @@ namespace Taxi_Qualifier.Web
             {
                 routes.MapRoute(
                     name: "default",
-                    template: "{controller=Taxis}/{action=Index}/{id?}");
+                    template: "{controller=Home}/{action=Index}/{id?}");
             });
         }
     }

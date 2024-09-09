@@ -1,6 +1,7 @@
 ﻿using Microsoft.AspNetCore.Identity;
 using System.Threading.Tasks;
 using Taxi_Qualifier.Web.Data.Entities;
+using Taxi_Qualifier.Web.Models;
 
 namespace Taxi_Qualifier.Web.Helpers
 {
@@ -15,5 +16,10 @@ namespace Taxi_Qualifier.Web.Helpers
         Task AddUserToRoleAsync(UserEntity user, string roleName);
 
         Task<bool> IsUserInRoleAsync(UserEntity user, string roleName);
+
+        Task<SignInResult> LoginAsync(LoginViewModel model);
+
+        Task LogoutAsync();
+
     }
 }
