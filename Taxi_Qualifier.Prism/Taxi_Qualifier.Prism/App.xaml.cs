@@ -12,8 +12,7 @@ namespace Taxi_Qualifier.Prism
 {
     public partial class App
     {
-        public App(IPlatformInitializer initializer)
-            : base(initializer)
+        public App(IPlatformInitializer initializer) : base(initializer)
         {
         }
 
@@ -21,7 +20,7 @@ namespace Taxi_Qualifier.Prism
         {
             InitializeComponent();
 
-            await NavigationService.NavigateAsync("NavigationPage/MainPage");
+            await NavigationService.NavigateAsync("NavigationPage/HomePage");
         }
 
         protected override void RegisterTypes(IContainerRegistry containerRegistry)
@@ -29,7 +28,7 @@ namespace Taxi_Qualifier.Prism
             containerRegistry.RegisterSingleton<IAppInfo, AppInfoImplementation>();
 
             containerRegistry.RegisterForNavigation<NavigationPage>();
-            containerRegistry.RegisterForNavigation<MainPage, MainPageViewModel>();
+            containerRegistry.RegisterForNavigation<HomePage, HomePageViewModel>();
         }
     }
 }
