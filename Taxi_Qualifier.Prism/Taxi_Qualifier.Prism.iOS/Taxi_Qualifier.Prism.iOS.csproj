@@ -212,5 +212,17 @@
       <Name>Taxi_Qualifier.Prism</Name>
     </ProjectReference>
   </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\ic_account_circle.png" />
+    <BundleResource Include="Resources\ic_airport_shuttle.png" />
+    <BundleResource Include="Resources\ic_exit_to_app.png" />
+    <BundleResource Include="Resources\ic_local_taxi.png" />
+    <BundleResource Include="Resources\ic_more_vert.png" />
+    <BundleResource Include="Resources\ic_people.png" />
+    <BundleResource Include="Resources\ic_report.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\taxi.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\Xamarin\iOS\Xamarin.iOS.CSharp.targets" />
 </Project>
