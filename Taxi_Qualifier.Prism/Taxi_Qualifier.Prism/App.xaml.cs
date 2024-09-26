@@ -1,6 +1,7 @@
 using Prism;
 using Prism.Ioc;
 
+using Taxi_Qualifier.Common.Services;
 using Taxi_Qualifier.Prism.ViewModels;
 using Taxi_Qualifier.Prism.Views;
 
@@ -25,8 +26,8 @@ namespace Taxi_Qualifier.Prism
 
         protected override void RegisterTypes(IContainerRegistry containerRegistry)
         {
+            containerRegistry.Register<IGeolocatorService, GeolocatorService>();
             containerRegistry.RegisterSingleton<IAppInfo, AppInfoImplementation>();
-
             containerRegistry.RegisterForNavigation<NavigationPage>();
             containerRegistry.RegisterForNavigation<HomePage, HomePageViewModel>();
             containerRegistry.RegisterForNavigation<TaxiMasterDetailPage, TaxiMasterDetailPageViewModel>();

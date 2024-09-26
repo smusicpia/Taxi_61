@@ -1,12 +1,15 @@
 ﻿using Android.App;
 using Android.Content.PM;
 using Android.OS;
+using Plugin.CurrentActivity;
+using Plugin.Permissions;
+
 using Prism;
 using Prism.Ioc;
 
 namespace Taxi_Qualifier.Prism.Droid
 {
-    [Activity(Theme = "@style/MainTheme",
+    [Activity(Label = "Taxi_Qualifier.Prism", Icon = "@mipmap/icon", Theme = "@style/MainTheme", MainLauncher = true,
               ConfigurationChanges = ConfigChanges.ScreenSize | ConfigChanges.Orientation | ConfigChanges.UiMode | ConfigChanges.ScreenLayout | ConfigChanges.SmallestScreenSize)]
     public class MainActivity : global::Xamarin.Forms.Platform.Android.FormsAppCompatActivity
     {
@@ -14,17 +17,25 @@ namespace Taxi_Qualifier.Prism.Droid
         {
             base.OnCreate(savedInstanceState);
 
+            CrossCurrentActivity.Current.Init(this, savedInstanceState);
             global::Xamarin.Forms.Forms.Init(this, savedInstanceState);
             global::Xamarin.Forms.Forms.Init(this, savedInstanceState);
             LoadApplication(new App(new AndroidInitializer()));
         }
 
-        public override void OnRequestPermissionsResult(int requestCode, string[] permissions, Android.Content.PM.Permission[] grantResults)
-        {
-            Xamarin.Essentials.Platform.OnRequestPermissionsResult(requestCode, permissions, grantResults);
+        //public override void OnRequestPermissionsResult(int requestCode, string[] permissions, Permission[] grantResults)
+        //{
+        //    Xamarin.Essentials.Platform.OnRequestPermissionsResult(requestCode, permissions, grantResults);
 
+        //    base.OnRequestPermissionsResult(requestCode, permissions, grantResults);
+        //}
+
+        public override void OnRequestPermissionsResult(int requestCode, string[] permissions, Permission[] grantResults)
+        {
+            PermissionsImplementation.Current.OnRequestPermissionsResult(requestCode, permissions, grantResults);
             base.OnRequestPermissionsResult(requestCode, permissions, grantResults);
         }
+
     }
 
     public class AndroidInitializer : IPlatformInitializer
