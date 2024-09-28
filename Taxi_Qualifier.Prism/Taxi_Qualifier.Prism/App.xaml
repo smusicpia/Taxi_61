@@ -5,7 +5,13 @@
              x:Class="Taxi_Qualifier.Prism.App">
   <Application.Resources>
 
-    <!-- Application resource dictionary -->
+		<ResourceDictionary>
 
-  </Application.Resources>
+			<!-- Parameters -->
+			<x:String x:Key="UrlAPI">https://appservicemusicpia.azurewebsites.net/</x:String>
+
+		</ResourceDictionary>
+
+
+	</Application.Resources>
 </prism:PrismApplication>
