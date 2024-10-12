@@ -7,6 +7,8 @@ using Plugin.Permissions;
 using Prism;
 using Prism.Ioc;
 
+using Syncfusion.SfBusyIndicator.XForms.Droid;
+
 namespace Taxi_Qualifier.Prism.Droid
 {
     [Activity(Label = "Taxi_Qualifier.Prism", Icon = "@mipmap/icon", Theme = "@style/MainTheme", MainLauncher = true,
@@ -19,7 +21,7 @@ namespace Taxi_Qualifier.Prism.Droid
 
             CrossCurrentActivity.Current.Init(this, savedInstanceState);
             global::Xamarin.Forms.Forms.Init(this, savedInstanceState);
-            global::Xamarin.Forms.Forms.Init(this, savedInstanceState);
+            new SfBusyIndicatorRenderer();
             LoadApplication(new App(new AndroidInitializer()));
         }
 
