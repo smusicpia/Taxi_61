@@ -2,6 +2,8 @@
 using System.Net.Http;
 using System.Threading.Tasks;
 using Newtonsoft.Json;
+using Plugin.Connectivity;
+
 using Taxi_Qualifier.Common.Models;
 
 namespace Taxi_Qualifier.Common.Services
@@ -46,5 +48,16 @@ namespace Taxi_Qualifier.Common.Services
                 };
             }
         }
+
+        public async Task<bool> CheckConnectionAsync(string url)
+        {
+            if (!CrossConnectivity.Current.IsConnected)
+            {
+                return false;
+            }
+
+            return await CrossConnectivity.Current.IsRemoteReachable(url);
+        }
+
     }
 }
