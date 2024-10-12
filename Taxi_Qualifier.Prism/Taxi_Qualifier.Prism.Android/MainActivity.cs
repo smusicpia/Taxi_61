@@ -8,6 +8,7 @@ using Prism;
 using Prism.Ioc;
 
 using Syncfusion.SfBusyIndicator.XForms.Droid;
+using Syncfusion.SfRating.XForms.Droid;
 
 namespace Taxi_Qualifier.Prism.Droid
 {
@@ -22,6 +23,7 @@ namespace Taxi_Qualifier.Prism.Droid
             CrossCurrentActivity.Current.Init(this, savedInstanceState);
             global::Xamarin.Forms.Forms.Init(this, savedInstanceState);
             new SfBusyIndicatorRenderer();
+            new SfRatingRenderer();
             LoadApplication(new App(new AndroidInitializer()));
         }
 
