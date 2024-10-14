@@ -7,7 +7,7 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Taxi_Qualifier.Common", "Ta
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Taxi_Qualifier.Web", "Taxi_Qualifier.Web\Taxi_Qualifier.Web.csproj", "{906733C9-6868-4B66-8308-6E1FB456C1EC}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Taxi_Qualifier.Prism", "Taxi_Qualifier.Prism\Taxi_Qualifier.Prism\Taxi_Qualifier.Prism.csproj", "{01BE18F5-B236-4E17-9FBF-6F8653606C4A}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Taxi_Qualifier.Prism", "Taxi_Qualifier.Prism\Taxi_Qualifier.Prism\Taxi_Qualifier.Prism.csproj", "{01BE18F5-B236-4E17-9FBF-6F8653606C4A}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Taxi_Qualifier.Prism.Android", "Taxi_Qualifier.Prism\Taxi_Qualifier.Prism.Android\Taxi_Qualifier.Prism.Android.csproj", "{846A3001-9B8F-4120-8FBC-755D890C8080}"
 EndProject
@@ -230,6 +230,9 @@ Global
 		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
+		RESX_EnableXlifSync = True
+		RESX_PrefixFieldType = Value, Comment
+		RESX_PrefixTranslations = True
 		SolutionGuid = {828A9E24-7162-40FB-BB92-95DA78B4DC56}
 	EndGlobalSection
 EndGlobal

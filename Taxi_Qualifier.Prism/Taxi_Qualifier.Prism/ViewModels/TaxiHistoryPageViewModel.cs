@@ -9,6 +9,7 @@ using Prism.Navigation;
 using Taxi_Qualifier.Common.Models;
 
 using Taxi_Qualifier.Common.Services;
+using Taxi_Qualifier.Prism.Helpers;
 
 namespace Taxi_Qualifier.Prism.ViewModels
 {
@@ -24,7 +25,7 @@ namespace Taxi_Qualifier.Prism.ViewModels
             IApiService apiService) : base(navigationService)
         {
             _apiService = apiService;
-            Title = "Taxi History";
+            Title = Languages.TaxiHistory;
         }
 
         public TaxiResponse Taxi
@@ -39,7 +40,6 @@ namespace Taxi_Qualifier.Prism.ViewModels
             set => SetProperty(ref _isRunning, value);
         }
 
-
         public string Plaque { get; set; }
 
         public DelegateCommand CheckPlaqueCommand => _checkPlaqueCommand ?? (_checkPlaqueCommand = new DelegateCommand(CheckPlaqueAsync));
@@ -49,9 +49,9 @@ namespace Taxi_Qualifier.Prism.ViewModels
             if (string.IsNullOrEmpty(Plaque))
             {
                 await App.Current.MainPage.DisplayAlert(
-                    "Error",
-                    "You must enter a plaque.",
-                    "Accept");
+                    Languages.Error,
+                    Languages.PlaqueError1,
+                    Languages.Accept);
                 return;
             }
 
@@ -59,9 +59,9 @@ namespace Taxi_Qualifier.Prism.ViewModels
             if (!regex.IsMatch(Plaque))
             {
                 await App.Current.MainPage.DisplayAlert(
-                    "Error",
-                    "The plaque must start with three letters and end with three numbers.",
-                    "Accept");
+                    Languages.Error,
+                    Languages.PlaqueError2,
+                    Languages.Accept);
                 return;
             }
 
@@ -71,7 +71,10 @@ namespace Taxi_Qualifier.Prism.ViewModels
             if (!connection)
             {
                 IsRunning = false;
-                await App.Current.MainPage.DisplayAlert("Error", "Check the internet connection.", "Accept");
+                await App.Current.MainPage.DisplayAlert(
+                    Languages.Error,
+                    Languages.PlaqueError2,
+                    Languages.Accept);
                 return;
             }
 
@@ -81,9 +84,9 @@ namespace Taxi_Qualifier.Prism.ViewModels
             if (!response.IsSuccess)
             {
                 await App.Current.MainPage.DisplayAlert(
-                    "Error",
+                    Languages.Error,
                     response.Message,
-                    "Accept");
+                    Languages.Accept);
                 return;
             }
 

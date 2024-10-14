@@ -1,0 +1,33 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xliff version="1.2" xmlns="urn:oasis:names:tc:xliff:document:1.2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="urn:oasis:names:tc:xliff:document:1.2 xliff-core-1.2-transitional.xsd">
+  <file datatype="xml" source-language="en-US" target-language="fr" original="TAXI_QUALIFIER.PRISM/TAXI_QUALIFIER.PRISM/RESOURCES/RESOURCE.RESX">
+    <body>
+      <group id="TAXI_QUALIFIER.PRISM/TAXI_QUALIFIER.PRISM/RESOURCES/RESOURCE.RESX" datatype="resx">
+        <trans-unit id="Accept" translate="yes" xml:space="preserve">
+          <source>Accept</source>
+          <target state="new">Accepter</target>
+        </trans-unit>
+        <trans-unit id="ConnectionError" translate="yes" xml:space="preserve">
+          <source>Check the internet connection.</source>
+          <target state="new">Vérifiez la connexion Internet</target>
+        </trans-unit>
+        <trans-unit id="Error" translate="yes" xml:space="preserve">
+          <source>Error</source>
+          <target state="new">Erreur</target>
+        </trans-unit>
+        <trans-unit id="PlaqueError1" translate="yes" xml:space="preserve">
+          <source>You must enter a plaque.</source>
+          <target state="new">Vous devez entrer une plaque.</target>
+        </trans-unit>
+        <trans-unit id="PlaqueError2" translate="yes" xml:space="preserve">
+          <source>The plaque must start with three numbers</source>
+          <target state="new">La plaque doit commencer par trois lettres et se terminer par trois chiffres.</target>
+        </trans-unit>
+        <trans-unit id="TaxiHistory" translate="yes" xml:space="preserve">
+          <source>Taxi History</source>
+          <target state="new">Histoire du taxi</target>
+        </trans-unit>
+      </group>
+    </body>
+  </file>
+</xliff>
