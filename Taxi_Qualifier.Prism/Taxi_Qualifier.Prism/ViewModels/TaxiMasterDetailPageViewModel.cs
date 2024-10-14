@@ -5,6 +5,7 @@ using System.Linq;
 using Prism.Navigation;
 
 using Taxi_Qualifier.Common.Models;
+using Taxi_Qualifier.Prism.Helpers;
 
 namespace Taxi_Qualifier.Prism.ViewModels
 {
@@ -28,37 +29,37 @@ namespace Taxi_Qualifier.Prism.ViewModels
                 {
                     Icon = "ic_airport_shuttle",
                     PageName = "HomePage",
-                    Title = "New trip"
+                    Title = Languages.NewTrip
                 },
                 new Menu
                 {
                     Icon = "ic_local_taxi",
                     PageName = "TaxiHistoryPage",
-                    Title = "See taxi history"
+                    Title = Languages.SeeTaxiHistory
                 },
                 new Menu
                 {
                     Icon = "ic_people",
                     PageName = "GroupPage",
-                    Title = "Admin my user group"
+                    Title = Languages.AdminMyUserGroup
                 },
                 new Menu
                 {
                     Icon = "ic_account_circle",
                     PageName = "ModifyUserPage",
-                    Title = "Modify User"
+                    Title = Languages.ModifyUser
                 },
                 new Menu
                 {
                     Icon = "ic_report",
                     PageName = "ReportPage",
-                    Title = "Report an incident"
+                    Title = Languages.ReportAnIncident
                 },
                 new Menu
                 {
                     Icon = "ic_exit_to_app",
                     PageName = "LoginPage",
-                    Title = "Log in"
+                    Title = Languages.LogIn
                 }
             };
 

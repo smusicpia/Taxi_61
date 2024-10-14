@@ -70,11 +70,38 @@ namespace Taxi_Qualifier.Prism.Resources {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Admin my user group.
+        /// </summary>
+        internal static string AdminMyUserGroup {
+            get {
+                return ResourceManager.GetString("AdminMyUserGroup", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Check Plaque.
+        /// </summary>
+        internal static string CheckPlaque {
+            get {
+                return ResourceManager.GetString("CheckPlaque", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Check the internet connection..
         /// </summary>
         internal static string ConnectionError {
             get {
                 return ResourceManager.GetString("ConnectionError", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Driver.
+        /// </summary>
+        internal static string Driver {
+            get {
+                return ResourceManager.GetString("Driver", resourceCulture);
             }
         }
         
@@ -88,11 +115,56 @@ namespace Taxi_Qualifier.Prism.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to You must enter a plaque..
+        ///   Looks up a localized string similar to Loading....
         /// </summary>
-        internal static string PlaqueError {
+        internal static string Loading {
             get {
-                return ResourceManager.GetString("PlaqueError", resourceCulture);
+                return ResourceManager.GetString("Loading", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Log in.
+        /// </summary>
+        internal static string LogIn {
+            get {
+                return ResourceManager.GetString("LogIn", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Modify user.
+        /// </summary>
+        internal static string ModifyUser {
+            get {
+                return ResourceManager.GetString("ModifyUser", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to New trip.
+        /// </summary>
+        internal static string NewTrip {
+            get {
+                return ResourceManager.GetString("NewTrip", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Number of trips.
+        /// </summary>
+        internal static string NumberOfTrips {
+            get {
+                return ResourceManager.GetString("NumberOfTrips", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Plaque.
+        /// </summary>
+        internal static string Plaque {
+            get {
+                return ResourceManager.GetString("Plaque", resourceCulture);
             }
         }
         
@@ -106,11 +178,83 @@ namespace Taxi_Qualifier.Prism.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to The plaque must start with three numbers.
+        ///   Looks up a localized string similar to The plaque must start with three letters and end with three numbers..
         /// </summary>
         internal static string PlaqueError2 {
             get {
                 return ResourceManager.GetString("PlaqueError2", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Enter plaque....
+        /// </summary>
+        internal static string PlaquePlaceHolder {
+            get {
+                return ResourceManager.GetString("PlaquePlaceHolder", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Qualification.
+        /// </summary>
+        internal static string Qualification {
+            get {
+                return ResourceManager.GetString("Qualification", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Remarks.
+        /// </summary>
+        internal static string Remarks {
+            get {
+                return ResourceManager.GetString("Remarks", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Report an incident.
+        /// </summary>
+        internal static string ReportAnIncident {
+            get {
+                return ResourceManager.GetString("ReportAnIncident", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Score.
+        /// </summary>
+        internal static string Score {
+            get {
+                return ResourceManager.GetString("Score", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to See taxi history.
+        /// </summary>
+        internal static string SeeTaxiHistory {
+            get {
+                return ResourceManager.GetString("SeeTaxiHistory", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Start Date.
+        /// </summary>
+        internal static string StartDate {
+            get {
+                return ResourceManager.GetString("StartDate", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Start Trip.
+        /// </summary>
+        internal static string StartTrip {
+            get {
+                return ResourceManager.GetString("StartTrip", resourceCulture);
             }
         }
         

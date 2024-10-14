@@ -7,21 +7,89 @@
           <source>Accept</source>
           <target state="new">Aceptar</target>
         </trans-unit>
+        <trans-unit id="AdminMyUserGroup" translate="yes" xml:space="preserve">
+          <source>Admin my user group</source>
+          <target state="new">Administrar mi grupo de usuarios</target>
+        </trans-unit>
+        <trans-unit id="CheckPlaque" translate="yes" xml:space="preserve">
+          <source>Check Plaque</source>
+          <target state="new">Comprobar placa</target>
+        </trans-unit>
         <trans-unit id="ConnectionError" translate="yes" xml:space="preserve">
           <source>Check the internet connection.</source>
           <target state="new">Compruebe la conexión a Internet</target>
         </trans-unit>
+        <trans-unit id="Driver" translate="yes" xml:space="preserve">
+          <source>Driver</source>
+          <target state="new">Conductor</target>
+        </trans-unit>
         <trans-unit id="Error" translate="yes" xml:space="preserve">
           <source>Error</source>
           <target state="new">Error</target>
+        </trans-unit>
+        <trans-unit id="Loading" translate="yes" xml:space="preserve">
+          <source>Loading...</source>
+          <target state="new">Cargando...</target>
+        </trans-unit>
+        <trans-unit id="LogIn" translate="yes" xml:space="preserve">
+          <source>Log in</source>
+          <target state="new">Iniciar sesión</target>
+        </trans-unit>
+        <trans-unit id="ModifyUser" translate="yes" xml:space="preserve">
+          <source>Modify user</source>
+          <target state="new">Modificar usuario</target>
+        </trans-unit>
+        <trans-unit id="NewTrip" translate="yes" xml:space="preserve">
+          <source>New trip</source>
+          <target state="new">Nuevo Viaje</target>
+        </trans-unit>
+        <trans-unit id="NumberOfTrips" translate="yes" xml:space="preserve">
+          <source>Number of trips</source>
+          <target state="new">Número de viajes</target>
+        </trans-unit>
+        <trans-unit id="Plaque" translate="yes" xml:space="preserve">
+          <source>Plaque</source>
+          <target state="new">Placa</target>
         </trans-unit>
         <trans-unit id="PlaqueError1" translate="yes" xml:space="preserve">
           <source>You must enter a plaque.</source>
           <target state="new">Debes entrar una placa.</target>
         </trans-unit>
         <trans-unit id="PlaqueError2" translate="yes" xml:space="preserve">
-          <source>The plaque must start with three numbers</source>
+          <source>The plaque must start with three letters and end with three numbers.</source>
           <target state="new">La placa debe comenzar con tres letras y terminar con tres números.</target>
+        </trans-unit>
+        <trans-unit id="PlaquePlaceHolder" translate="yes" xml:space="preserve">
+          <source>Enter plaque...</source>
+          <target state="new">Entrar placa...</target>
+        </trans-unit>
+        <trans-unit id="Qualification" translate="yes" xml:space="preserve">
+          <source>Qualification</source>
+          <target state="new">Calificación</target>
+        </trans-unit>
+        <trans-unit id="Remarks" translate="yes" xml:space="preserve">
+          <source>Remarks</source>
+          <target state="new">Notas</target>
+        </trans-unit>
+        <trans-unit id="ReportAnIncident" translate="yes" xml:space="preserve">
+          <source>Report an incident</source>
+          <target state="new">Informar una incidencia</target>
+        </trans-unit>
+        <trans-unit id="Score" translate="yes" xml:space="preserve">
+          <source>Score</source>
+          <target state="new">Nota</target>
+        </trans-unit>
+        <trans-unit id="SeeTaxiHistory" translate="yes" xml:space="preserve">
+          <source>See taxi history</source>
+          <target state="new">Ver historial de taxis</target>
+        </trans-unit>
+        <trans-unit id="StartDate" translate="yes" xml:space="preserve">
+          <source>Start Date</source>
+          <target state="new">Fecha de inicio</target>
+        </trans-unit>
+        <trans-unit id="StartTrip" translate="yes" xml:space="preserve">
+          <source>Start Trip</source>
+          <target state="new">Iniciar viaje</target>
         </trans-unit>
         <trans-unit id="TaxiHistory" translate="yes" xml:space="preserve">
           <source>Taxi History</source>
