@@ -83,7 +83,7 @@ namespace Taxi_Qualifier.Web.Data
                             Qualification = 4.5f,
                             Source = "ITM Fraternidad",
                             Target = "ITM Robledo",
-                            Remarks = "Muy buen servicio",
+                            Remarks = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin blandit magna magna, nec rutrum nulla pretium quis. Aliquam a nibh non metus hendrerit efficitur ac sit amet lorem. Vivamus sollicitudin imperdiet felis vel rutrum. Curabitur eros est, vulputate non interdum pellentesque, volutpat ut nunc. Nunc tempus massa consectetur fermentum tempor. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Donec at orci at nisl volutpat fermentum tempor ut nulla. Nulla feugiat, sem a eleifend mollis, erat magna faucibus sapien, eu vulputate odio ipsum non orci. Donec a imperdiet tortor. Suspendisse hendrerit justo vel libero pretium, vitae gravida enim commodo. Curabitur scelerisque, nibh in pellentesque bibendum, dui velit semper odio, mollis aliquam turpis turpis in lacus. Donec in sapien ut dui vehicula faucibus. Phasellus nec sem magna. Curabitur vestibulum varius iaculis.",
                             User = user1
                         },
                         new TripEntity
@@ -93,7 +93,7 @@ namespace Taxi_Qualifier.Web.Data
                             Qualification = 4.8f,
                             Source = "ITM Robledo",
                             Target = "ITM Fraternidad",
-                            Remarks = "Conductor muy amable",
+                            Remarks = "Aliquam in ullamcorper orci. In sem purus, porttitor quis fermentum in, convallis sit amet dui. Proin sed diam purus. Quisque odio quam, luctus quis leo sit amet, sagittis rhoncus lacus. Maecenas auctor congue lacus a lobortis. Phasellus eget rhoncus nunc. Quisque elementum suscipit sem, eget venenatis urna placerat vel. Quisque malesuada venenatis felis, non condimentum urna convallis vel.",
                             User = user1
                         }
                     }
