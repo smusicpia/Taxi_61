@@ -15,16 +15,21 @@
     <item name="colorAccent">@color/colorAccent</item>
   </style>
 
-	<style name="AppCompatDialogStyle" parent="Theme.AppCompat.Light.Dialog">
-		<item name="colorAccent">@color/colorAccent</item>
-	</style>
+  <style name="AppCompatDialogStyle" parent="Theme.AppCompat.Light.Dialog">
+	<item name="colorAccent">@color/colorAccent</item>
+  </style>
 
+	<!--
 	<style name="MainTheme.Splash" parent="Theme.AppCompat.Light.NoActionBar">
     <item name="android:windowBackground">@drawable/splash_screen</item>
     <item name="android:windowNoTitle">true</item>
     <item name="android:windowFullscreen">true</item>
     <item name="android:windowContentOverlay">@null</item>
     <item name="android:windowActionBar">true</item>
-  </style>
+  </style>-->
 
+	<style name="Theme.Splash" parent="android:Theme">
+		<item name="android:windowBackground">@drawable/taxi_splash</item>
+		<item name="android:windowNoTitle">true</item>
+	</style>
 </resources>
