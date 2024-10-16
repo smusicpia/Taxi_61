@@ -49,7 +49,6 @@ namespace Taxi_Qualifier.Prism.ViewModels
             set => SetProperty(ref _trips, value);
         }
 
-
         public string Plaque { get; set; }
 
         public DelegateCommand CheckPlaqueCommand => _checkPlaqueCommand ?? (_checkPlaqueCommand = new DelegateCommand(CheckPlaqueAsync));
