@@ -21,5 +21,6 @@ namespace Taxi_Qualifier.Web.Helpers
 
         Task LogoutAsync();
 
+        Task<UserEntity> AddUserAsync(AddUserViewModel model, string path);
     }
 }

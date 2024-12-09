@@ -23,4 +23,8 @@
     <ProjectReference Include="..\Taxi_Qualifier.Common\Taxi_Qualifier.Common.csproj" />
   </ItemGroup>
 
+  <ItemGroup>
+    <Folder Include="wwwroot\images\Users\" />
+  </ItemGroup>
+
 </Project>
