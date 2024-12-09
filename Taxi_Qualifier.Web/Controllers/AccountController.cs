@@ -54,5 +54,10 @@ namespace Taxi_Qualifier.Web.Controllers
             return RedirectToAction("Index", "Home");
         }
 
+        public IActionResult NotAuthorized()
+        {
+            return View();
+        }
+
     }
 }
