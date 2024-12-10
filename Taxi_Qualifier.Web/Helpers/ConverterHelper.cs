@@ -1,5 +1,7 @@
 ﻿using System.Linq;
 
+using Taxi.Web.Data.Entities;
+
 using Taxi_Qualifier.Common.Models;
 using Taxi_Qualifier.Web.Data.Entities;
 
@@ -59,6 +61,33 @@ namespace Taxi_Qualifier.Web.Helpers
                 UserType = user.UserType
             };
         }
+
+        public TripResponse ToTripResponse(TripEntity tripEntity)
+        {
+            return new TripResponse
+            {
+                EndDate = tripEntity.EndDate,
+                Id = tripEntity.Id,
+                Qualification = tripEntity.Qualification,
+                Remarks = tripEntity.Remarks,
+                Source = tripEntity.Source,
+                SourceLatitude = tripEntity.SourceLatitude,
+                SourceLongitude = tripEntity.SourceLongitude,
+                StartDate = tripEntity.StartDate,
+                Target = tripEntity.Target,
+                TargetLatitude = tripEntity.TargetLatitude,
+                TargetLongitude = tripEntity.TargetLongitude,
+                TripDetails = tripEntity.TripDetails?.Select(td => new TripDetailResponse
+                {
+                    Date = td.Date,
+                    Id = td.Id,
+                    Latitude = td.Latitude,
+                    Longitude = td.Longitude
+                }).ToList(),
+                User = ToUserResponse(tripEntity.User)
+            };
+        }
+
     }
 
 }

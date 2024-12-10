@@ -1,4 +1,6 @@
 ﻿using Microsoft.AspNetCore.Identity;
+
+using System;
 using System.Threading.Tasks;
 using Taxi_Qualifier.Web.Data.Entities;
 using Taxi_Qualifier.Web.Models;
@@ -7,7 +9,9 @@ namespace Taxi_Qualifier.Web.Helpers
 {
     public interface IUserHelper
     {
-        Task<UserEntity> GetUserByEmailAsync(string email);
+        Task<UserEntity> GetUserAsync(string email);
+
+        Task<UserEntity> GetUserAsync(Guid userId);
 
         Task<IdentityResult> AddUserAsync(UserEntity user, string password);
 
