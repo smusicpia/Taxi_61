@@ -15,10 +15,7 @@ namespace Taxi_Qualifier.Web.Helpers
         private readonly RoleManager<IdentityRole> _roleManager;
         private readonly SignInManager<UserEntity> _signInManager;
 
-        public UserHelper(
-            UserManager<UserEntity> userManager,
-            RoleManager<IdentityRole> roleManager,
-            SignInManager<UserEntity> signInManager)
+        public UserHelper(UserManager<UserEntity> userManager, RoleManager<IdentityRole> roleManager, SignInManager<UserEntity> signInManager)
         {
             _userManager = userManager;
             _roleManager = roleManager;
@@ -111,6 +108,11 @@ namespace Taxi_Qualifier.Web.Helpers
         public async Task<IdentityResult> UpdateUserAsync(UserEntity user)
         {
             return await _userManager.UpdateAsync(user);
+        }
+
+        public async Task<SignInResult> ValidatePasswordAsync(UserEntity user, string password)
+        {
+            return await _signInManager.CheckPasswordSignInAsync(user, password, false);
         }
 
     }
