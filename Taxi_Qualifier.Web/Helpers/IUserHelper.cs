@@ -37,5 +37,8 @@ namespace Taxi_Qualifier.Web.Helpers
 
         Task<IdentityResult> ConfirmEmailAsync(UserEntity user, string token);
 
+        Task<string> GeneratePasswordResetTokenAsync(UserEntity user);
+
+        Task<IdentityResult> ResetPasswordAsync(UserEntity user, string token, string password);
     }
 }
