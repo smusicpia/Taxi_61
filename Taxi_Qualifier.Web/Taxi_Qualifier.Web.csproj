@@ -28,4 +28,10 @@
     <Folder Include="wwwroot\images\Users\" />
   </ItemGroup>
 
+  <ItemGroup>
+    <EmbeddedResource Update="Resources\Resource.resx">
+      <Generator></Generator>
+    </EmbeddedResource>
+  </ItemGroup>
+
 </Project>

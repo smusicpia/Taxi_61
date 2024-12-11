@@ -1,0 +1,85 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xliff version="1.2" xmlns="urn:oasis:names:tc:xliff:document:1.2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="urn:oasis:names:tc:xliff:document:1.2 xliff-core-1.2-transitional.xsd">
+  <file datatype="xml" source-language="en-US" target-language="fr" original="TAXI_QUALIFIER.WEB/RESOURCES/RESOURCE.RESX">
+    <body>
+      <group id="TAXI_QUALIFIER.WEB/RESOURCES/RESOURCE.RESX" datatype="resx">
+        <trans-unit id="ChangePasswordSuccess" translate="yes" xml:space="preserve">
+          <source>The password was changed successfully.</source>
+          <target state="new">Votre mot de passe a été réinitialisé avec succès.</target>
+        </trans-unit>
+        <trans-unit id="Confirm" translate="yes" xml:space="preserve">
+          <source>Confirm</source>
+          <target state="new">Confirmer</target>
+        </trans-unit>
+        <trans-unit id="ConfirmEmail" translate="yes" xml:space="preserve">
+          <source>Confirm Email</source>
+          <target state="new">Confirmer l'adresse de messagerie</target>
+        </trans-unit>
+        <trans-unit id="EmailConfirmationBody" translate="yes" xml:space="preserve">
+          <source>To allow the user, please click on this link:</source>
+          <target state="new">Pour autoriser l&amp;#39;utilisateur, veuillez cliquer sur ce lien:!</target>
+        </trans-unit>
+        <trans-unit id="EmailConfirmationSent" translate="yes" xml:space="preserve">
+          <source>A Confirmation email was sent. Please confirm your account and log into the App.</source>
+          <target state="new">Un e-mail de confirmation a été envoyé. Veuillez confirmer votre compte et vous connecter à l&amp;#39;application.!</target>
+        </trans-unit>
+        <trans-unit id="EmailConfirmationSubject" translate="yes" xml:space="preserve">
+          <source>Email confirmation</source>
+          <target state="new">Envoyer confirmation par e-mail</target>
+        </trans-unit>
+        <trans-unit id="RecoverPasswordBody" translate="yes" xml:space="preserve">
+          <source>To reset the password click in this link:</source>
+          <target state="new">Pour réinitialiser le mot de passe, cliquez sur ce lien:</target>
+        </trans-unit>
+        <trans-unit id="RecoverPasswordEmailSent" translate="yes" xml:space="preserve">
+          <source>An email with instructions to change the password was sent.</source>
+          <target state="new">Un e-mail contenant des instructions pour modifier le mot de passe a été envoyé.</target>
+        </trans-unit>
+        <trans-unit id="RecoverPasswordSubject" translate="yes" xml:space="preserve">
+          <source>Recover Password</source>
+          <target state="new">Récupérer le mot de passe</target>
+        </trans-unit>
+        <trans-unit id="Reject" translate="yes" xml:space="preserve">
+          <source>Reject</source>
+          <target state="new">Rejeter</target>
+        </trans-unit>
+        <trans-unit id="RequestJoinGroupBody" translate="yes" xml:space="preserve">
+          <source>has requested that you be a member of their user group in the TAXI application.</source>
+          <target state="new">a demandé à être membre de son groupe d&amp;#39;utilisateurs dans l&amp;#39;application TAXI.</target>
+        </trans-unit>
+        <trans-unit id="RequestJoinGroupEmailSent" translate="yes" xml:space="preserve">
+          <source>An email has been sent to the user with your request, we hope to respond soon!</source>
+          <target state="new">Un e-mail a été envoyé à l&amp;#39;utilisateur avec votre demande, nous espérons y répondre prochainement !!</target>
+        </trans-unit>
+        <trans-unit id="RequestJoinGroupSubject" translate="yes" xml:space="preserve">
+          <source>Request to join a group</source>
+          <target state="new">Demandez à rejoindre un groupe</target>
+        </trans-unit>
+        <trans-unit id="TheUser" translate="yes" xml:space="preserve">
+          <source>The user</source>
+          <target state="new">L'utilisateur</target>
+        </trans-unit>
+        <trans-unit id="UserAlreadyBelogToGroup" translate="yes" xml:space="preserve">
+          <source>The user already belongs to your group.</source>
+          <target state="new">L&amp;#39;utilisateur appartient déjà à votre groupe.</target>
+        </trans-unit>
+        <trans-unit id="UserAlreadyExists" translate="yes" xml:space="preserve">
+          <source>User already exists.</source>
+          <target state="new">L'utilisateur existe déjà.</target>
+        </trans-unit>
+        <trans-unit id="UserNotFoundError" translate="yes" xml:space="preserve">
+          <source>User doesn't exists.</source>
+          <target state="new">L'utilisateur n'existe pas.</target>
+        </trans-unit>
+        <trans-unit id="WishToAccept" translate="yes" xml:space="preserve">
+          <source>If you wish to accept, click here: </source>
+          <target state="new">Si vous souhaitez accepter, cliquez ici:</target>
+        </trans-unit>
+        <trans-unit id="WishToReject" translate="yes" xml:space="preserve">
+          <source>If you wish to reject, click here: </source>
+          <target state="new">Si vous souhaitez refuser, cliquez ici:</target>
+        </trans-unit>
+      </group>
+    </body>
+  </file>
+</xliff>
