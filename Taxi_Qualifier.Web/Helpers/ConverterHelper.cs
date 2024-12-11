@@ -41,7 +41,7 @@ namespace Taxi_Qualifier.Web.Helpers
             };
         }
 
-        private UserResponse ToUserResponse(UserEntity user)
+        public UserResponse ToUserResponse(UserEntity user)
         {
             if (user == null)
             {
@@ -87,6 +87,7 @@ namespace Taxi_Qualifier.Web.Helpers
                 User = ToUserResponse(tripEntity.User)
             };
         }
+
 
     }
 
