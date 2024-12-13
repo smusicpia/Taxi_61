@@ -2,8 +2,6 @@
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.Extensions.DependencyInjection;
 
-using Taxi.Web.Data;
-
 using Taxi_Qualifier.Web.Data;
 using Taxi_Qualifier.Web;
 

@@ -30,5 +30,4 @@ namespace Taxi_Qualifier.Common.Services
             }
         }
     }
-
 }

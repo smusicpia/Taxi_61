@@ -1,7 +1,5 @@
 ﻿using System;
-using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
-using System.Text;
 
 namespace Taxi_Qualifier.Common.Models
 {
@@ -21,5 +19,4 @@ namespace Taxi_Qualifier.Common.Models
 
         public double Longitude { get; set; }
     }
-
 }

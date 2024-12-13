@@ -2,7 +2,6 @@
 using System.Threading.Tasks;
 using System;
 using Microsoft.AspNetCore.Mvc;
-using Taxi.Web.Data.Entities;
 using Taxi_Qualifier.Common.Models;
 
 using Taxi_Qualifier.Web.Data.Entities;

@@ -1,6 +1,5 @@
 ﻿using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
-using Taxi.Web.Data.Entities;
 
 namespace Taxi_Qualifier.Web.Data.Entities
 {

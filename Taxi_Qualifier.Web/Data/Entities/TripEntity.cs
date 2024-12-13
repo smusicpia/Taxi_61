@@ -2,9 +2,7 @@
 using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
 
-using Taxi_Qualifier.Web.Data.Entities;
-
-namespace Taxi.Web.Data.Entities
+namespace Taxi_Qualifier.Web.Data.Entities
 {
     public class TripEntity
     {

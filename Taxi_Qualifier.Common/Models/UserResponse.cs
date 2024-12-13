@@ -1,8 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Text;
-
-using Taxi_Qualifier.Common.Enums;
+﻿using Taxi_Qualifier.Common.Enums;
 
 namespace Taxi_Qualifier.Common.Models
 {

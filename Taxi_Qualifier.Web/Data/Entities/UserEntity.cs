@@ -3,8 +3,6 @@ using System.ComponentModel.DataAnnotations;
 
 using Microsoft.AspNetCore.Identity;
 
-using Taxi.Web.Data.Entities;
-
 using Taxi_Qualifier.Common.Enums;
 
 namespace Taxi_Qualifier.Web.Data.Entities

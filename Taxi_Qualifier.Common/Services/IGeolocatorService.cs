@@ -1,7 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Text;
-using System.Threading.Tasks;
+﻿using System.Threading.Tasks;
 
 namespace Taxi_Qualifier.Common.Services
 {
@@ -13,5 +10,4 @@ namespace Taxi_Qualifier.Common.Services
 
         Task GetLocationAsync();
     }
-
 }

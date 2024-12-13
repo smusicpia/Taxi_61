@@ -1,7 +1,7 @@
 ﻿using System;
 using System.ComponentModel.DataAnnotations;
 
-namespace Taxi.Web.Data.Entities
+namespace Taxi_Qualifier.Web.Data.Entities
 {
     public class TripDetailEntity
     {
