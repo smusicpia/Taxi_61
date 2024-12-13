@@ -2,7 +2,6 @@
 
 using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore;
-using Taxi.Web.Data.Entities;
 using Taxi_Qualifier.Web.Data.Entities;
 
 namespace Taxi_Qualifier.Web.Data
@@ -20,6 +19,10 @@ namespace Taxi_Qualifier.Web.Data
         public DbSet<TripDetailEntity> TripDetails { get; set; }
 
         public DbSet<UserGroupEntity> UserGroups { get; set; }
+
+        public DbSet<UserGroupDetailEntity> UserGroupDetails { get; set; }
+
+        public DbSet<UserGroupRequestEntity> UserGroupRequests { get; set; }
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {

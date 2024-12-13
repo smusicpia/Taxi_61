@@ -1,8 +1,6 @@
 ﻿using System.Collections.Generic;
 using System.Linq;
 
-using Taxi.Web.Data.Entities;
-
 using Taxi_Qualifier.Common.Models;
 using Taxi_Qualifier.Web.Data.Entities;
 
@@ -124,5 +122,15 @@ namespace Taxi_Qualifier.Web.Helpers
                 User = ToUserResponse(taxi.User)
             };
         }
+
+        public List<UserGroupDetailResponse> ToUserGroupResponse(List<UserGroupDetailEntity> users)
+        {
+            return users.Select(u => new UserGroupDetailResponse
+            {
+                Id = u.Id,
+                User = ToUserResponse(u.User)
+            }).ToList();
+        }
+
     }
 }

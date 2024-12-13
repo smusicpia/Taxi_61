@@ -1,9 +1,8 @@
 ﻿using System.Collections.Generic;
 
-using Taxi.Web.Data.Entities;
+using Taxi_Qualifier.Web.Data.Entities;
 
 using Taxi_Qualifier.Common.Models;
-using Taxi_Qualifier.Web.Data.Entities;
 
 namespace Taxi_Qualifier.Web.Helpers
 {
@@ -16,5 +15,7 @@ namespace Taxi_Qualifier.Web.Helpers
         UserResponse ToUserResponse(UserEntity user);
 
         List<TripResponseWithTaxi> ToTripResponse(List<TripEntity> tripEntities);
+
+        List<UserGroupDetailResponse> ToUserGroupResponse(List<UserGroupDetailEntity> users);
     }
 }

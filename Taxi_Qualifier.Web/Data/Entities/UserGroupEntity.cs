@@ -1,8 +1,6 @@
 ﻿using System.Collections.Generic;
 
-using Taxi_Qualifier.Web.Data.Entities;
-
-namespace Taxi.Web.Data.Entities
+namespace Taxi_Qualifier.Web.Data.Entities
 {
     public class UserGroupEntity
     {
@@ -10,6 +8,6 @@ namespace Taxi.Web.Data.Entities
 
         public UserEntity User { get; set; }
 
-        public ICollection<UserEntity> Users { get; set; }
+        public ICollection<UserGroupDetailEntity> Users { get; set; }
     }
 }
