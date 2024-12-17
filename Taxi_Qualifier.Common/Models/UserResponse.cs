@@ -25,5 +25,8 @@ namespace Taxi_Qualifier.Common.Models
         public string FullName => $"{FirstName} {LastName}";
 
         public string FullNameWithDocument => $"{FirstName} {LastName} - {Document}";
+
+        public string PictureFullPath => string.IsNullOrEmpty(PicturePath) ? "http://www.Taxi.somee.com//images/noimage.png" : $"http://www.Taxi.somee.com//{PicturePath.Substring(1)}";
+
     }
 }

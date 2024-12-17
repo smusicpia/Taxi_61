@@ -28,6 +28,7 @@ namespace Taxi_Qualifier.Prism.iOS
             Xamarin.FormsMaps.Init();
             new SfBusyIndicatorRenderer();
             new SfRatingRenderer();
+            FFImageLoading.Forms.Platform.CachedImageRenderer.Init();
             LoadApplication(new App(new iOSInitializer()));
 
             return base.FinishedLaunching(app, options);
