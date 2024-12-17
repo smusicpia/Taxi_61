@@ -3,14 +3,11 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              xmlns:prism="http://prismlibrary.com"
              x:Class="Taxi_Qualifier.Prism.App">
-  <Application.Resources>
-
+	<Application.Resources>
 		<ResourceDictionary>
-
 			<!-- Parameters -->
 			<x:String x:Key="UrlAPI">https://www.taxi.somee.com/</x:String>
 			<!--<x:String x:Key="UrlAPI">https://localhost:44368/</x:String>-->
-
 			<!-- Colors -->
 			<Color x:Key="ColorBackgroud">#FFFF05</Color>
 			<Color x:Key="ColorPrimary">#3D3D3D</Color>
@@ -43,9 +40,6 @@
 			<Style x:Key="DangerButton" TargetType="Button">
 				<Setter Property="BackgroundColor" Value="{StaticResource ColorDanger}" />
 			</Style>
-
 		</ResourceDictionary>
-
-
 	</Application.Resources>
 </prism:PrismApplication>
