@@ -2,8 +2,11 @@
 using System.Collections.ObjectModel;
 using System.Linq;
 
+using Newtonsoft.Json;
+
 using Prism.Navigation;
 
+using Taxi_Qualifier.Common.Helpers;
 using Taxi_Qualifier.Common.Models;
 using Taxi_Qualifier.Prism.Helpers;
 
@@ -12,11 +15,27 @@ namespace Taxi_Qualifier.Prism.ViewModels
     public class TaxiMasterDetailPageViewModel : ViewModelBase
     {
         private readonly INavigationService _navigationService;
+        private UserResponse _user;
 
         public TaxiMasterDetailPageViewModel(INavigationService navigationService) : base(navigationService)
         {
             _navigationService = navigationService;
+            LoadUser();
             LoadMenus();
+        }
+
+        public UserResponse User
+        {
+            get => _user;
+            set => SetProperty(ref _user, value);
+        }
+
+        private void LoadUser()
+        {
+            if (Settings.IsLogin)
+            {
+                User = JsonConvert.DeserializeObject<UserResponse>(Settings.User);
+            }
         }
 
         public ObservableCollection<MenuItemViewModel> Menus { get; set; }
@@ -59,7 +78,7 @@ namespace Taxi_Qualifier.Prism.ViewModels
                 {
                     Icon = "ic_exit_to_app",
                     PageName = "LoginPage",
-                    Title = Languages.LogIn
+                    Title = Settings.IsLogin ? Languages.Logout : Languages.Login
                 }
             };
 

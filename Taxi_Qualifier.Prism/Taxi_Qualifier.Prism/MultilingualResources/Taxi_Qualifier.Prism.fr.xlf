@@ -23,6 +23,18 @@
           <source>Driver</source>
           <target state="new">Pilote</target>
         </trans-unit>
+        <trans-unit id="Email" translate="yes" xml:space="preserve">
+          <source>Email</source>
+          <target state="new">Courrier électronique</target>
+        </trans-unit>
+        <trans-unit id="EmailError" translate="yes" xml:space="preserve">
+          <source>You must enter an email.</source>
+          <target state="new">Vous devez entrer un email.</target>
+        </trans-unit>
+        <trans-unit id="EmailPlaceHolder" translate="yes" xml:space="preserve">
+          <source>Enter your email...</source>
+          <target state="new">Entrez votre adresse e-mail</target>
+        </trans-unit>
         <trans-unit id="Error" translate="yes" xml:space="preserve">
           <source>Error</source>
           <target state="new">Erreur</target>
@@ -32,8 +44,15 @@
           <target state="new">Chargement</target>
         </trans-unit>
         <trans-unit id="LogIn" translate="yes" xml:space="preserve">
-          <source>Log in</source>
+          <source>Login</source>
           <target state="new">Se connecter</target>
+        </trans-unit>
+        <trans-unit id="LoginError" translate="yes" xml:space="preserve">
+          <source>Email or password incorrect.</source>
+          <target state="new">E-mail ou mot de passe incorrect.</target></trans-unit>
+        <trans-unit id="Logout" translate="yes" xml:space="preserve">
+          <source>Logout</source>
+          <target state="new">Déconnecter</target>
         </trans-unit>
         <trans-unit id="ModifyUser" translate="yes" xml:space="preserve">
           <source>Modify user</source>
@@ -46,6 +65,18 @@
         <trans-unit id="NumberOfTrips" translate="yes" xml:space="preserve">
           <source>Number of trips</source>
           <target state="new">Nombre de courses</target>
+        </trans-unit>
+        <trans-unit id="Password" translate="yes" xml:space="preserve">
+          <source>Password</source>
+          <target state="new">Mot de passe :</target>
+        </trans-unit>
+        <trans-unit id="PasswordError" translate="yes" xml:space="preserve">
+          <source>You must enter a password.</source>
+          <target state="new">Vous devez entrer un mot de passe.</target>
+        </trans-unit>
+        <trans-unit id="PasswordPlaceHolder" translate="yes" xml:space="preserve">
+          <source>Enter your password...</source>
+          <target state="new">Entrez votre mot de passe</target>
         </trans-unit>
         <trans-unit id="Plaque" translate="yes" xml:space="preserve">
           <source>Plaque</source>
@@ -66,6 +97,10 @@
         <trans-unit id="Qualification" translate="yes" xml:space="preserve">
           <source>Qualification</source>
           <target state="new">Qualification</target>
+        </trans-unit>
+        <trans-unit id="Register" translate="yes" xml:space="preserve">
+          <source>Register</source>
+          <target state="new">Registres</target>
         </trans-unit>
         <trans-unit id="Remarks" translate="yes" xml:space="preserve">
           <source>Remarks</source>
