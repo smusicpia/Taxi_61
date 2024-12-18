@@ -1,6 +1,9 @@
 using System;
 using Android.App;
+using Android.OS;
 using Android.Runtime;
+
+using Plugin.CurrentActivity;
 
 namespace Taxi_Qualifier.Prism.Droid
 {
@@ -18,6 +21,7 @@ namespace Taxi_Qualifier.Prism.Droid
         {
             base.OnCreate();
             Xamarin.Essentials.Platform.Init(this);
+            CrossCurrentActivity.Current.Init(this);
         }
     }
 }

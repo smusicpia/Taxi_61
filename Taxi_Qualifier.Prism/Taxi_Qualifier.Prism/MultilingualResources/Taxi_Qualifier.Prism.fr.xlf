@@ -23,6 +23,9 @@
           <source>Admin my user group</source>
           <target state="new">Admin mon groupe d&amp;#39;utilisateurs</target>
         </trans-unit>
+        <trans-unit id="Cancel" translate="yes" xml:space="preserve">
+          <source>Cancel</source>
+          <target state="new">Annuler</target></trans-unit>
         <trans-unit id="CheckPlaque" translate="yes" xml:space="preserve">
           <source>Check Plaque</source>
           <target state="new">Vérifiez la plaque</target>
@@ -75,6 +78,12 @@
           <source>Enter your first name...</source>
           <target state="new">Entrez votre prénom</target>
         </trans-unit>
+        <trans-unit id="FromCamera" translate="yes" xml:space="preserve">
+          <source>From camera</source>
+          <target state="new">De la caméra</target></trans-unit>
+        <trans-unit id="FromGallery" translate="yes" xml:space="preserve">
+          <source>From gallery</source>
+          <target state="new">De la galerie</target></trans-unit>
         <trans-unit id="LastName" translate="yes" xml:space="preserve">
           <source>Last name</source>
           <target state="new">Nom</target>
@@ -158,6 +167,9 @@
           <source>You must enter a phone.</source>
           <target state="new">Vous devez introduire un numéro de téléphone.</target>
         </trans-unit>
+        <trans-unit id="PictureSource" translate="yes" xml:space="preserve">
+          <source>Where do you want to take the picture?</source>
+          <target state="new">Où voulez-vous prendre la photo?</target></trans-unit>
         <trans-unit id="Plaque" translate="yes" xml:space="preserve">
           <source>Plaque</source>
           <target state="new">Étiquette</target>

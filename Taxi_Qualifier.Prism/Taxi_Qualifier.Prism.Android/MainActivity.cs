@@ -18,6 +18,8 @@ namespace Taxi_Qualifier.Prism.Droid
         Theme = "@style/MainTheme",
         MainLauncher = false,
         ConfigurationChanges = ConfigChanges.ScreenSize | ConfigChanges.Orientation | ConfigChanges.UiMode | ConfigChanges.ScreenLayout | ConfigChanges.SmallestScreenSize)]
+    [assembly: UsesFeature("android.hardware.camera", Required = false)]
+    [assembly: UsesFeature("android.hardware.camera.autofocus", Required = false)]
     public class MainActivity : global::Xamarin.Forms.Platform.Android.FormsAppCompatActivity
     {
         protected override void OnCreate(Bundle savedInstanceState)
@@ -31,13 +33,6 @@ namespace Taxi_Qualifier.Prism.Droid
             new SfRatingRenderer();
             LoadApplication(new App(new AndroidInitializer()));
         }
-
-        //public override void OnRequestPermissionsResult(int requestCode, string[] permissions, Permission[] grantResults)
-        //{
-        //    Xamarin.Essentials.Platform.OnRequestPermissionsResult(requestCode, permissions, grantResults);
-
-        //    base.OnRequestPermissionsResult(requestCode, permissions, grantResults);
-        //}
 
         public override void OnRequestPermissionsResult(int requestCode, string[] permissions, Permission[] grantResults)
         {
