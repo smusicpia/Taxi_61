@@ -12,6 +12,7 @@ using Taxi_Qualifier.Common.Helpers;
 using Taxi_Qualifier.Common.Models;
 using Taxi_Qualifier.Common.Services;
 using Taxi_Qualifier.Prism.Helpers;
+using Taxi_Qualifier.Prism.Views;
 
 namespace Taxi_Qualifier.Prism.ViewModels
 {
@@ -128,8 +129,9 @@ namespace Taxi_Qualifier.Prism.ViewModels
             Password = string.Empty;
         }
 
-        private void RegisterAsync()
+        private async void RegisterAsync()
         {
+            await _navigationService.NavigateAsync(nameof(RegisterPage));
         }
     }
 }

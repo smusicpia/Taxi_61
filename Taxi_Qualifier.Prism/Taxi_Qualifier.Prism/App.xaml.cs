@@ -3,6 +3,7 @@ using Prism.Ioc;
 
 using Syncfusion.Licensing;
 
+using Taxi_Qualifier.Common.Helpers;
 using Taxi_Qualifier.Common.Services;
 using Taxi_Qualifier.Prism.ViewModels;
 using Taxi_Qualifier.Prism.Views;
@@ -30,6 +31,7 @@ namespace Taxi_Qualifier.Prism
         protected override void RegisterTypes(IContainerRegistry containerRegistry)
         {
             containerRegistry.Register<IGeolocatorService, GeolocatorService>();
+            containerRegistry.Register<IRegexHelper, RegexHelper>();
             containerRegistry.Register<IApiService, ApiService>();
             containerRegistry.RegisterSingleton<IAppInfo, AppInfoImplementation>();
             containerRegistry.RegisterForNavigation<NavigationPage>();
@@ -41,6 +43,7 @@ namespace Taxi_Qualifier.Prism
             containerRegistry.RegisterForNavigation<ReportPage, ReportPageViewModel>();
             containerRegistry.RegisterForNavigation<LoginPage, LoginPageViewModel>();
             containerRegistry.RegisterForNavigation<TripDetailPage, TripDetailPageViewModel>();
+            containerRegistry.RegisterForNavigation<RegisterPage, RegisterPageViewModel>();
         }
     }
 }

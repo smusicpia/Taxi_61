@@ -7,6 +7,7 @@
 		<ResourceDictionary>
 			<!-- Parameters -->
 			<x:String x:Key="UrlAPI">https://www.taxi.somee.com/</x:String>
+			<x:String x:Key="UrlNoImage">https://www.taxi.somee.com//images/noimage.png</x:String>
 			<!--<x:String x:Key="UrlAPI">https://localhost:44368/</x:String>-->
 			<!-- Colors -->
 			<Color x:Key="ColorBackgroud">#FFFF05</Color>

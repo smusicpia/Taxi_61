@@ -7,6 +7,18 @@
           <source>Accept</source>
           <target state="new">Accepter</target>
         </trans-unit>
+        <trans-unit id="Address" translate="yes" xml:space="preserve">
+          <source>Address</source>
+          <target state="new">Adresse</target>
+        </trans-unit>
+        <trans-unit id="AddressError" translate="yes" xml:space="preserve">
+          <source>You must enter an address.</source>
+          <target state="new">Vous devez indiquer une adresse.</target>
+        </trans-unit>
+        <trans-unit id="AddressPlaceHolder" translate="yes" xml:space="preserve">
+          <source>Enter your address...</source>
+          <target state="new">Entrez votre adresse&amp;hellip;</target>
+        </trans-unit>
         <trans-unit id="AdminMyUserGroup" translate="yes" xml:space="preserve">
           <source>Admin my user group</source>
           <target state="new">Admin mon groupe d&amp;#39;utilisateurs</target>
@@ -18,6 +30,18 @@
         <trans-unit id="ConnectionError" translate="yes" xml:space="preserve">
           <source>Check the internet connection.</source>
           <target state="new">Vérifiez la connexion Internet</target>
+        </trans-unit>
+        <trans-unit id="Document" translate="yes" xml:space="preserve">
+          <source>Document</source>
+          <target state="new">Document</target>
+        </trans-unit>
+        <trans-unit id="DocumentError" translate="yes" xml:space="preserve">
+          <source>You must enter a document.</source>
+          <target state="new">Vous devez saisir un document.!</target>
+        </trans-unit>
+        <trans-unit id="DocumentPlaceHolder" translate="yes" xml:space="preserve">
+          <source>Enter your document number...</source>
+          <target state="new">Entrez votre numéro de document ...</target>
         </trans-unit>
         <trans-unit id="Driver" translate="yes" xml:space="preserve">
           <source>Driver</source>
@@ -38,6 +62,30 @@
         <trans-unit id="Error" translate="yes" xml:space="preserve">
           <source>Error</source>
           <target state="new">Erreur</target>
+        </trans-unit>
+        <trans-unit id="FirstName" translate="yes" xml:space="preserve">
+          <source>First name</source>
+          <target state="new">Prénom</target>
+        </trans-unit>
+        <trans-unit id="FirstNameError" translate="yes" xml:space="preserve">
+          <source>You must enter a first name.</source>
+          <target state="new">Vous devez entrer un prénom</target>
+        </trans-unit>
+        <trans-unit id="FirstNamePlaceHolder" translate="yes" xml:space="preserve">
+          <source>Enter your first name...</source>
+          <target state="new">Entrez votre prénom</target>
+        </trans-unit>
+        <trans-unit id="LastName" translate="yes" xml:space="preserve">
+          <source>Last name</source>
+          <target state="new">Nom</target>
+        </trans-unit>
+        <trans-unit id="LastNameError" translate="yes" xml:space="preserve">
+          <source>You must enter a last name.</source>
+          <target state="new">Vous devez entrer un nom</target>
+        </trans-unit>
+        <trans-unit id="LastNamePlaceHolder" translate="yes" xml:space="preserve">
+          <source>Enter your last name...</source>
+          <target state="new">Entrez votre nom</target>
         </trans-unit>
         <trans-unit id="Loading" translate="yes" xml:space="preserve">
           <source>Loading...</source>
@@ -66,9 +114,29 @@
           <source>Number of trips</source>
           <target state="new">Nombre de courses</target>
         </trans-unit>
+        <trans-unit id="Ok" translate="yes" xml:space="preserve">
+          <source>Ok</source>
+          <target state="new">D'accord</target>
+        </trans-unit>
         <trans-unit id="Password" translate="yes" xml:space="preserve">
           <source>Password</source>
           <target state="new">Mot de passe :</target>
+        </trans-unit>
+        <trans-unit id="PasswordConfirm" translate="yes" xml:space="preserve">
+          <source>Password confirm</source>
+          <target state="new">Confirmer le mot de passe</target>
+        </trans-unit>
+        <trans-unit id="PasswordConfirmError1" translate="yes" xml:space="preserve">
+          <source>You must enter a password confirm.</source>
+          <target state="new">Vous devez saisir un mot de passe.</target>
+        </trans-unit>
+        <trans-unit id="PasswordConfirmError2" translate="yes" xml:space="preserve">
+          <source>The password and confirm does not match.</source>
+          <target state="new">Le mot de passe et sa confirmation ne coïncident pas.</target>
+        </trans-unit>
+        <trans-unit id="PasswordConfirmPlaceHolder" translate="yes" xml:space="preserve">
+          <source>Enter the password confirm...</source>
+          <target state="new">Saisir le mot de passe, puis valider</target>
         </trans-unit>
         <trans-unit id="PasswordError" translate="yes" xml:space="preserve">
           <source>You must enter a password.</source>
@@ -77,6 +145,18 @@
         <trans-unit id="PasswordPlaceHolder" translate="yes" xml:space="preserve">
           <source>Enter your password...</source>
           <target state="new">Entrez votre mot de passe</target>
+        </trans-unit>
+        <trans-unit id="Phone" translate="yes" xml:space="preserve">
+          <source>Phone</source>
+          <target state="new">Téléphone</target>
+        </trans-unit>
+        <trans-unit id="PhoneError" translate="yes" xml:space="preserve">
+          <source>Enter your phone...</source>
+          <target state="new">Entrez votre téléphone</target>
+        </trans-unit>
+        <trans-unit id="PhonePlaceHolder" translate="yes" xml:space="preserve">
+          <source>You must enter a phone.</source>
+          <target state="new">Vous devez introduire un numéro de téléphone.</target>
         </trans-unit>
         <trans-unit id="Plaque" translate="yes" xml:space="preserve">
           <source>Plaque</source>
@@ -101,6 +181,18 @@
         <trans-unit id="Register" translate="yes" xml:space="preserve">
           <source>Register</source>
           <target state="new">Registres</target>
+        </trans-unit>
+        <trans-unit id="RegisterAs" translate="yes" xml:space="preserve">
+          <source>Register as</source>
+          <target state="new">Enregistrer en tant que</target>
+        </trans-unit>
+        <trans-unit id="RegisterAsError" translate="yes" xml:space="preserve">
+          <source>You must select a role.</source>
+          <target state="new">Vous devez sélectionner un rôle.</target>
+        </trans-unit>
+        <trans-unit id="RegisterAsPlaceHolder" translate="yes" xml:space="preserve">
+          <source>Select a role...</source>
+          <target state="new">Sélectionner un rôle</target>
         </trans-unit>
         <trans-unit id="Remarks" translate="yes" xml:space="preserve">
           <source>Remarks</source>
@@ -130,6 +222,9 @@
           <source>Taxi History</source>
           <target state="new">Histoire du taxi</target>
         </trans-unit>
+        <trans-unit id="User" translate="yes" xml:space="preserve">
+          <source>User</source>
+          <target state="new">Utilisateur</target></trans-unit>
       </group>
     </body>
   </file>
