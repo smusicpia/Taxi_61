@@ -1,11 +1,6 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-
-using Newtonsoft.Json;
+﻿using Newtonsoft.Json;
 
 using Prism.Commands;
-using Prism.Mvvm;
 using Prism.Navigation;
 
 using Taxi_Qualifier.Common.Helpers;
@@ -25,6 +20,7 @@ namespace Taxi_Qualifier.Prism.ViewModels
         private string _password;
         private DelegateCommand _loginCommand;
         private DelegateCommand _registerCommand;
+        private DelegateCommand _forgotPasswordCommand;
 
         public LoginPageViewModel(INavigationService navigationService, IApiService apiService) : base(navigationService)
         {
@@ -37,6 +33,8 @@ namespace Taxi_Qualifier.Prism.ViewModels
         public DelegateCommand LoginCommand => _loginCommand ?? (_loginCommand = new DelegateCommand(LoginAsync));
 
         public DelegateCommand RegisterCommand => _registerCommand ?? (_registerCommand = new DelegateCommand(RegisterAsync));
+
+        public DelegateCommand ForgotPasswordCommand => _forgotPasswordCommand ?? (_forgotPasswordCommand = new DelegateCommand(ForgotPasswordAsync));
 
         public bool IsRunning
         {
@@ -133,5 +131,11 @@ namespace Taxi_Qualifier.Prism.ViewModels
         {
             await _navigationService.NavigateAsync(nameof(RegisterPage));
         }
+
+        private async void ForgotPasswordAsync()
+        {
+            await _navigationService.NavigateAsync(nameof(RememberPasswordPage));
+        }
+
     }
 }

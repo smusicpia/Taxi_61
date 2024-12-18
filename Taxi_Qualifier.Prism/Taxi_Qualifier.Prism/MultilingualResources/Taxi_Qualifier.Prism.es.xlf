@@ -78,6 +78,10 @@
           <source>Enter your first name...</source>
           <target state="new">Escribir nombre</target>
         </trans-unit>
+        <trans-unit id="ForgotPassword" translate="yes" xml:space="preserve">
+          <source>Forgot password</source>
+          <target state="new">Has olvidado tu contraseña</target>
+        </trans-unit>
         <trans-unit id="FromCamera" translate="yes" xml:space="preserve">
           <source>From camera</source>
           <target state="new">Tomar con la cámara</target></trans-unit>
@@ -154,6 +158,10 @@
         <trans-unit id="PasswordPlaceHolder" translate="yes" xml:space="preserve">
           <source>Enter your password...</source>
           <target state="new">Entra tu contraseña...</target>
+        </trans-unit>
+        <trans-unit id="PasswordRecover" translate="yes" xml:space="preserve">
+          <source>Password recover</source>
+          <target state="new">Recuperar contraseña</target>
         </trans-unit>
         <trans-unit id="Phone" translate="yes" xml:space="preserve">
           <source>Phone</source>
