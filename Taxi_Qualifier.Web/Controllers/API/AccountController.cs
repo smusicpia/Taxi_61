@@ -182,7 +182,7 @@ namespace Taxi_Qualifier.Web.Controllers.API
             userEntity.LastName = request.LastName;
             userEntity.Address = request.Address;
             userEntity.PhoneNumber = request.Phone;
-            userEntity.Document = request.Phone;
+            userEntity.Document = request.Document;
             userEntity.PicturePath = picturePath;
 
             IdentityResult respose = await _userHelper.UpdateUserAsync(userEntity);

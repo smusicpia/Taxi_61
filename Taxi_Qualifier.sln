@@ -230,9 +230,9 @@ Global
 		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
-		SolutionGuid = {828A9E24-7162-40FB-BB92-95DA78B4DC56}
-		RESX_PrefixTranslations = True
-		RESX_PrefixFieldType = Value, Comment
 		RESX_EnableXlifSync = True
+		RESX_PrefixFieldType = Value, Comment
+		RESX_PrefixTranslations = False
+		SolutionGuid = {828A9E24-7162-40FB-BB92-95DA78B4DC56}
 	EndGlobalSection
 EndGlobal

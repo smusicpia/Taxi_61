@@ -26,6 +26,10 @@
         <trans-unit id="Cancel" translate="yes" xml:space="preserve">
           <source>Cancel</source>
           <target state="new">Annuler</target></trans-unit>
+        <trans-unit id="ChangePassword" translate="yes" xml:space="preserve">
+          <source>Change password</source>
+          <target state="new">Changer le mot de passe</target>
+        </trans-unit>
         <trans-unit id="CheckPlaque" translate="yes" xml:space="preserve">
           <source>Check Plaque</source>
           <target state="new">Vérifiez la plaque</target>
@@ -222,6 +226,10 @@
           <source>Report an incident</source>
           <target state="new">Signaler un incident</target>
         </trans-unit>
+        <trans-unit id="Save" translate="yes" xml:space="preserve">
+          <source>Save</source>
+          <target state="new">Sauvegarder</target>
+        </trans-unit>
         <trans-unit id="Score" translate="yes" xml:space="preserve">
           <source>Score</source>
           <target state="new">Score</target>
@@ -245,6 +253,10 @@
         <trans-unit id="User" translate="yes" xml:space="preserve">
           <source>User</source>
           <target state="new">Utilisateur</target></trans-unit>
+        <trans-unit id="UserUpdated" translate="yes" xml:space="preserve">
+          <source>User Updated</source>
+          <target state="new">Utilisateur mis à jour</target>
+        </trans-unit>
       </group>
     </body>
   </file>

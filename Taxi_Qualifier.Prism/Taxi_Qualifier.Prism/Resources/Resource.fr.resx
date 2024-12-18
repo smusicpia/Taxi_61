@@ -303,4 +303,13 @@
   <data name="ForgotPassword" xml:space="preserve">
     <value>Mot de passe oublié</value>
   </data>
+  <data name="Save" xml:space="preserve">
+    <value>Sauvegarder</value>
+  </data>
+  <data name="ChangePassword" xml:space="preserve">
+    <value>Changer le mot de passe</value>
+  </data>
+  <data name="UserUpdated" xml:space="preserve">
+    <value>Utilisateur mis à jour</value>
+  </data>
 </root>
