@@ -16,6 +16,14 @@ namespace Taxi_Qualifier.Prism.Views
     {
         private readonly IGeolocatorService _geolocatorService;
 
+        private void MoveMap(Position position)
+        {
+            MyMap.MoveToRegion(MapSpan.FromCenterAndRadius(
+                position,
+                Distance.FromKilometers(.2)));
+        }
+
+
         public HomePage(IGeolocatorService geolocatorService)
         {
             InitializeComponent();
@@ -42,9 +50,7 @@ namespace Taxi_Qualifier.Prism.Views
                     Position position = new Position(
                         _geolocatorService.Latitude,
                         _geolocatorService.Longitude);
-                    MyMap.MoveToRegion(MapSpan.FromCenterAndRadius(
-                        position,
-                        Distance.FromKilometers(.5)));
+                    MoveMap(position);
                 }
             }
         }
@@ -91,6 +97,5 @@ namespace Taxi_Qualifier.Prism.Views
                 return false;
             }
         }
-
     }
 }
