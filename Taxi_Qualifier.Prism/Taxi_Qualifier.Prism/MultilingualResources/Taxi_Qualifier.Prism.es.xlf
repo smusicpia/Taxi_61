@@ -248,7 +248,7 @@
         </trans-unit>
         <trans-unit id="PlaquePlaceHolder" translate="yes" xml:space="preserve">
           <source>Enter plaque...</source>
-          <target state="new">Entrar placa...</target>
+          <target state="new">ABC123</target>
         </trans-unit>
         <trans-unit id="Qualification" translate="yes" xml:space="preserve">
           <source>Qualification</source>

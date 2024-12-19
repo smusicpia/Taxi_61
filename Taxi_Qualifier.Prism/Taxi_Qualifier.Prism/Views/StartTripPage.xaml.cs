@@ -11,12 +11,15 @@ namespace Taxi_Qualifier.Prism.Views
     public partial class StartTripPage : ContentPage
     {
         private readonly IGeolocatorService _geolocatorService;
+        private static StartTripPage _instance;
 
         public StartTripPage(IGeolocatorService geolocatorService)
         {
             InitializeComponent();
+            _instance = this;
             _geolocatorService = geolocatorService;
         }
+
         protected override void OnAppearing()
         {
             base.OnAppearing();
@@ -65,6 +68,22 @@ namespace Taxi_Qualifier.Prism.Views
             return permissionLocation == PermissionStatus.Granted ||
                    permissionLocationAlways == PermissionStatus.Granted ||
                    permissionLocationWhenInUse == PermissionStatus.Granted;
+        }
+
+        public static StartTripPage GetInstance()
+        {
+            return _instance;
+        }
+
+        public void AddPin(Position position, string address, string label, PinType pinType)
+        {
+            MyMap.Pins.Add(new Pin
+            {
+                Address = address,
+                Label = label,
+                Position = position,
+                Type = pinType
+            });
         }
     }
 }
