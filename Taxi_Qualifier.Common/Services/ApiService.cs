@@ -3,10 +3,12 @@ using System.Net.Http;
 using System.Net.Http.Headers;
 using System.Text;
 using System.Threading.Tasks;
+
 using Newtonsoft.Json;
-using Plugin.Connectivity;
 
 using Taxi_Qualifier.Common.Models;
+
+using Xamarin.Essentials;
 
 namespace Taxi_Qualifier.Common.Services
 {
@@ -51,14 +53,10 @@ namespace Taxi_Qualifier.Common.Services
             }
         }
 
-        public async Task<bool> CheckConnectionAsync(string url)
+        public bool CheckConnection()
         {
-            if (!CrossConnectivity.Current.IsConnected)
-            {
-                return false;
-            }
-
-            return await CrossConnectivity.Current.IsRemoteReachable(url);
+            //return Connectivity.NetworkAccess == NetworkAccess.Internet;
+            return Connectivity.NetworkAccess == NetworkAccess.Internet;
         }
         public async Task<Response> GetTokenAsync(string urlBase, string servicePrefix, string controller, TokenRequest request)
         {

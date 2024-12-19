@@ -100,8 +100,7 @@ namespace Taxi_Qualifier.Prism.ViewModels
             IsRunning = true;
             IsEnabled = false;
             string url = App.Current.Resources["UrlAPI"].ToString();
-            bool connection = await _apiService.CheckConnectionAsync(url);
-            if (!connection)
+            if (!_apiService.CheckConnection())
             {
                 IsRunning = false;
                 IsEnabled = true;

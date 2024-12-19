@@ -114,8 +114,7 @@ namespace Taxi_Qualifier.Prism.ViewModels
         public async void ReloadUser()
         {
             string url = App.Current.Resources["UrlAPI"].ToString();
-            bool connection = await _apiService.CheckConnectionAsync(url);
-            if (!connection)
+            if (!_apiService.CheckConnection())
             {
                 return;
             }
