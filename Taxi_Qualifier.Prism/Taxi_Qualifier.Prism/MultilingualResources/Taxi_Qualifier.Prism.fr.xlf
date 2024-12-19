@@ -34,9 +34,37 @@
           <source>Check Plaque</source>
           <target state="new">Vérifiez la plaque</target>
         </trans-unit>
+        <trans-unit id="ConfirmNewPassword" translate="yes" xml:space="preserve">
+          <source>Confirm New Password</source>
+          <target state="new">Confirmer un nouveau mot de passe</target>
+        </trans-unit>
+        <trans-unit id="ConfirmNewPasswordError" translate="yes" xml:space="preserve">
+          <source>You must enter a new password confirmation.</source>
+          <target state="new">Vous devez saisir une nouvelle confirmation de mot de passe.</target>
+        </trans-unit>
+        <trans-unit id="ConfirmNewPasswordError2" translate="yes" xml:space="preserve">
+          <source>The new password and the confirmation does not match.</source>
+          <target state="new">Le nouveau mot de passe et la confirmation ne correspondent pas.</target>
+        </trans-unit>
+        <trans-unit id="ConfirmNewPasswordPlaceHolder" translate="yes" xml:space="preserve">
+          <source>Enter the confirmation for new password...</source>
+          <target state="new">Entrez la confirmation du nouveau mot de passe ...</target>
+        </trans-unit>
         <trans-unit id="ConnectionError" translate="yes" xml:space="preserve">
           <source>Check the internet connection.</source>
           <target state="new">Vérifiez la connexion Internet</target>
+        </trans-unit>
+        <trans-unit id="CurrentPassword" translate="yes" xml:space="preserve">
+          <source>Current password</source>
+          <target state="new">Mot de passe actuel</target>
+        </trans-unit>
+        <trans-unit id="CurrentPasswordError" translate="yes" xml:space="preserve">
+          <source>You must enter your current password</source>
+          <target state="new">Vous devez saisir votre mot de passe actuel</target>
+        </trans-unit>
+        <trans-unit id="CurrentPasswordPlaceHolder" translate="yes" xml:space="preserve">
+          <source>Enter your current password...</source>
+          <target state="new">Entrez votre mot de passe actuel ...</target>
         </trans-unit>
         <trans-unit id="Document" translate="yes" xml:space="preserve">
           <source>Document</source>
@@ -122,6 +150,18 @@
         <trans-unit id="ModifyUser" translate="yes" xml:space="preserve">
           <source>Modify user</source>
           <target state="new">Modifier l'utilisateur</target>
+        </trans-unit>
+        <trans-unit id="NewPassword" translate="yes" xml:space="preserve">
+          <source>New password</source>
+          <target state="new">Nouveau mot de passe</target>
+        </trans-unit>
+        <trans-unit id="NewPasswordError" translate="yes" xml:space="preserve">
+          <source>You must enter a new password.</source>
+          <target state="new">Vous devez saisir un nouveau mot de passe.</target>
+        </trans-unit>
+        <trans-unit id="NewPasswordPlaceHolder" translate="yes" xml:space="preserve">
+          <source>Enter a new password...</source>
+          <target state="new">Entrez un nouveau mot de passe ...</target>
         </trans-unit>
         <trans-unit id="NewTrip" translate="yes" xml:space="preserve">
           <source>New trip</source>

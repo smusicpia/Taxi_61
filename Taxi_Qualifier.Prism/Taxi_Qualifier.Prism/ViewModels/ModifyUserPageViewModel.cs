@@ -13,6 +13,7 @@ using Taxi_Qualifier.Common.Helpers;
 using Taxi_Qualifier.Common.Models;
 using Taxi_Qualifier.Common.Services;
 using Taxi_Qualifier.Prism.Helpers;
+using Taxi_Qualifier.Prism.Views;
 
 using Xamarin.Forms;
 
@@ -30,6 +31,7 @@ namespace Taxi_Qualifier.Prism.ViewModels
         private MediaFile _file;
         private DelegateCommand _changeImageCommand;
         private DelegateCommand _saveCommand;
+        private DelegateCommand _changePasswordCommand;
 
         public ModifyUserPageViewModel(INavigationService navigationService, IFilesHelper filesHelper, IApiService apiService)
             : base(navigationService)
@@ -46,6 +48,8 @@ namespace Taxi_Qualifier.Prism.ViewModels
         public DelegateCommand ChangeImageCommand => _changeImageCommand ?? (_changeImageCommand = new DelegateCommand(ChangeImageAsync));
 
         public DelegateCommand SaveCommand => _saveCommand ?? (_saveCommand = new DelegateCommand(SaveAsync));
+
+        public DelegateCommand ChangePasswordCommand => _changePasswordCommand ?? (_changePasswordCommand = new DelegateCommand(ChangePasswordAsync));
 
         public ImageSource Image
         {
@@ -200,6 +204,10 @@ namespace Taxi_Qualifier.Prism.ViewModels
                 });
             }
         }
-    }
 
+        private async void ChangePasswordAsync()
+        {
+            await _navigationService.NavigateAsync(nameof(ChangePasswordPage));
+        }
+    }
 }
