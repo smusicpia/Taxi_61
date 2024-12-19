@@ -342,4 +342,16 @@
   <data name="NewPasswordPlaceHolder" xml:space="preserve">
     <value>Entrez un nouveau mot de passe ...</value>
   </data>
+  <data name="Source" xml:space="preserve">
+    <value>Source</value>
+  </data>
+  <data name="EndTrip" xml:space="preserve">
+    <value>Fin de voyage</value>
+  </data>
+  <data name="GeolocationError" xml:space="preserve">
+    <value>Il n'était pas possible d'obtenir votre adresse actuelle, veuillez essayer plus tard</value>
+  </data>
+  <data name="ConfirmAddress" xml:space="preserve">
+    <value>Confirmez votre adresse.</value>
+  </data>
 </root>

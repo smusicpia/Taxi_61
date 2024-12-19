@@ -34,6 +34,10 @@
           <source>Check Plaque</source>
           <target state="new">Vérifiez la plaque</target>
         </trans-unit>
+        <trans-unit id="ConfirmAddress" translate="yes" xml:space="preserve">
+          <source>Confirm your address.</source>
+          <target state="new">Confirmez votre adresse.</target>
+        </trans-unit>
         <trans-unit id="ConfirmNewPassword" translate="yes" xml:space="preserve">
           <source>Confirm New Password</source>
           <target state="new">Confirmer un nouveau mot de passe</target>
@@ -94,6 +98,10 @@
           <source>Enter your email...</source>
           <target state="new">Entrez votre adresse e-mail</target>
         </trans-unit>
+        <trans-unit id="EndTrip" translate="yes" xml:space="preserve">
+          <source>End trip</source>
+          <target state="new">Fin de voyage</target>
+        </trans-unit>
         <trans-unit id="Error" translate="yes" xml:space="preserve">
           <source>Error</source>
           <target state="new">Erreur</target>
@@ -120,6 +128,10 @@
         <trans-unit id="FromGallery" translate="yes" xml:space="preserve">
           <source>From gallery</source>
           <target state="new">De la galerie</target></trans-unit>
+        <trans-unit id="GeolocationError" translate="yes" xml:space="preserve">
+          <source>It was not possible to get your current address, please try later</source>
+          <target state="new">Il n'était pas possible d'obtenir votre adresse actuelle, veuillez essayer plus tard</target>
+        </trans-unit>
         <trans-unit id="LastName" translate="yes" xml:space="preserve">
           <source>Last name</source>
           <target state="new">Nom</target>
@@ -277,6 +289,10 @@
         <trans-unit id="SeeTaxiHistory" translate="yes" xml:space="preserve">
           <source>See taxi history</source>
           <target state="new">Voir l&amp;#39;historique des taxis</target>
+        </trans-unit>
+        <trans-unit id="Source" translate="yes" xml:space="preserve">
+          <source>Source</source>
+          <target state="new">Source</target>
         </trans-unit>
         <trans-unit id="StartDate" translate="yes" xml:space="preserve">
           <source>Start Date</source>

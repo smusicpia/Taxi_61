@@ -133,6 +133,15 @@ namespace Taxi_Qualifier.Prism.Resources {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Confirm your address..
+        /// </summary>
+        internal static string ConfirmAddress {
+            get {
+                return ResourceManager.GetString("ConfirmAddress", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Confirm New Password.
         /// </summary>
         internal static string ConfirmNewPassword {
@@ -268,6 +277,15 @@ namespace Taxi_Qualifier.Prism.Resources {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to End trip.
+        /// </summary>
+        internal static string EndTrip {
+            get {
+                return ResourceManager.GetString("EndTrip", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Error.
         /// </summary>
         internal static string Error {
@@ -327,6 +345,15 @@ namespace Taxi_Qualifier.Prism.Resources {
         internal static string FromGallery {
             get {
                 return ResourceManager.GetString("FromGallery", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to It was not possible to get your current address, please try later.
+        /// </summary>
+        internal static string GeolocationError {
+            get {
+                return ResourceManager.GetString("GeolocationError", resourceCulture);
             }
         }
         
@@ -687,6 +714,15 @@ namespace Taxi_Qualifier.Prism.Resources {
         internal static string SeeTaxiHistory {
             get {
                 return ResourceManager.GetString("SeeTaxiHistory", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Source.
+        /// </summary>
+        internal static string Source {
+            get {
+                return ResourceManager.GetString("Source", resourceCulture);
             }
         }
         

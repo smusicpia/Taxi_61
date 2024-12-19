@@ -31,6 +31,7 @@ namespace Taxi_Qualifier.Prism.Droid
             FFImageLoading.Forms.Platform.CachedImageRenderer.Init(true);
             new SfBusyIndicatorRenderer();
             new SfRatingRenderer();
+            Xamarin.FormsMaps.Init(this, savedInstanceState);
             LoadApplication(new App(new AndroidInitializer()));
         }
 
