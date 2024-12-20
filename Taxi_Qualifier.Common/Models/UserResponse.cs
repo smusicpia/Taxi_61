@@ -26,7 +26,12 @@ namespace Taxi_Qualifier.Common.Models
 
         public string FullNameWithDocument => $"{FirstName} {LastName} - {Document}";
 
-        public string PictureFullPath => string.IsNullOrEmpty(PicturePath) ? "http://www.Taxi.somee.com//images/noimage.png" : $"http://www.Taxi.somee.com//{PicturePath.Substring(1)}";
+        //public string PictureFullPath => string.IsNullOrEmpty(PicturePath) ? "http://www.Taxi.somee.com//images/noimage.png" : $"http://www.Taxi.somee.com//{PicturePath.Substring(1)}";
+
+        public string PictureFullPath => string.IsNullOrEmpty(PicturePath)
+            ? "http://www.Taxi.somee.com//images/noimage.png"
+            : $"https://zulutaxi.blob.core.windows.net/users/{PicturePath}";
+
 
     }
 }

@@ -30,6 +30,12 @@ namespace Taxi_Qualifier.Web.Data.Entities
         [Display(Name = "Picture")]
         public string PicturePath { get; set; }
 
+        [Display(Name = "Picture")]
+        public string PictureFullPath => string.IsNullOrEmpty(PicturePath)
+            ? "http://www.Taxi.somee.com//images/noimage.png"
+            : $"https://zulutaxi.blob.core.windows.net/users/{PicturePath}";
+
+
         [Display(Name = "User Type")]
         public UserType UserType { get; set; }
 

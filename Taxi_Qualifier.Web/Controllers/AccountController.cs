@@ -16,32 +16,47 @@ using Taxi_Qualifier.Web.Data;
 using Microsoft.EntityFrameworkCore;
 using System.Collections.Generic;
 using Taxi_Qualifier.Common.Enums;
+using Microsoft.AspNetCore.Authorization;
 
 namespace Taxi_Qualifier.Web.Controllers
 {
     public class AccountController : Controller
     {
         private readonly IUserHelper _userHelper;
-        private readonly IImageHelper _imageHelper;
+        //private readonly IImageHelper _imageHelper;
         private readonly ICombosHelper _combosHelper;
         private readonly IConfiguration _configuration;
         private readonly IMailHelper _mailHelper;
+        private readonly IBlobHelper _blobHelper;
         private readonly DataContext _context;
 
         public AccountController(
         IUserHelper userHelper,
-        IImageHelper imageHelper,
+        //IImageHelper imageHelper,
         ICombosHelper combosHelper,
         IConfiguration configuration,
         IMailHelper mail,
+        IBlobHelper blobHelper,
         DataContext context)
         {
             _userHelper = userHelper;
-            _imageHelper = imageHelper;
+            //_imageHelper = imageHelper;
             _combosHelper = combosHelper;
             _configuration = configuration;
             _mailHelper = mail;
+            _blobHelper = blobHelper;
             _context = context;
+        }
+
+        [Authorize(Roles = "Admin")]
+        public async Task<IActionResult> Index()
+        {
+            return View(await _context.Users
+                .Include(u => u.Trips)
+                .Where(u => u.UserType == UserType.User)
+                .OrderBy(u => u.FirstName)
+                .ThenBy(u => u.LastName)
+                .ToListAsync());
         }
 
         public IActionResult Register()
@@ -64,10 +79,11 @@ namespace Taxi_Qualifier.Web.Controllers
 
                 if (model.PictureFile != null)
                 {
-                    path = await _imageHelper.UploadImageAsync(model.PictureFile, "Users");
+                    //path = await _imageHelper.UploadImageAsync(model.PictureFile, "Users");
+                    path = await _blobHelper.UploadBlobAsync(model.PictureFile, "users");
                 }
 
-                Data.Entities.UserEntity user = await _userHelper.AddUserAsync(model, path);
+                UserEntity user = await _userHelper.AddUserAsync(model, path);
                 if (user == null)
                 {
                     ModelState.AddModelError(string.Empty, "This email is already used.");
@@ -167,7 +183,8 @@ namespace Taxi_Qualifier.Web.Controllers
 
                 if (model.PictureFile != null)
                 {
-                    path = await _imageHelper.UploadImageAsync(model.PictureFile, "Users");
+                    //path = await _imageHelper.UploadImageAsync(model.PictureFile, "Users");
+                    path = await _blobHelper.UploadBlobAsync(model.PictureFile, "users");
                 }
 
                 UserEntity user = await _userHelper.GetUserAsync(User.Identity.Name);
